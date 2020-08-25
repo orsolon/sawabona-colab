@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg shadow">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img id="logo" src="./images/logo.png" alt="sawabona">
@@ -31,34 +31,39 @@
                     <li class="nav-item">
                         <p class="text-right">você é <b>IMPORTANTE</b> para nós.</p>
                     </li>
-
                 </ul>
-
             </div>
         </div>
     </nav>
-    <!--formulario e imagem da mulher em pé-->
-    <div class="row">
-        <div class="col">
-            <form method="POST">
-                <div class="infos-item">
-                    <label for="nome"><b>Seu nome</b></label>
-                    <input name="name" class="infos-input" type="text" pattern="^\D{2,}\s[\D\s]{2,}$"
-                        placeholder="Digite seu nome completo" title="Digite seu nome completo" required="">
-                </div>
-                <div class="infos-item">
-                    <label for="email"><b>Seu melhor email</b></label>
-                    <input name="email" class="infos-input" type="email" title="Digite um email válido"
-                        placeholder="Digite um email válido" id="email">
-                </div>
-                <input type="button" value="Garantir presença" onclick="sendEmail()" />
-            </form>
+<!--formulario e imagem da mulher em pé-->
+    <section class="container">
+        <div class="row mt-5">
+            <div class="col-7">
+                <h3>Afroempreendorismo Feminino em tempos de pandêmia!</h3>
+                <p class="mt-4">Os negócios liderados por mulheres pretas foram os que mais
+                    sofreram durante a pandemia de Covid-19. </p>
+                <p>Preencha seus dados
+                    abaixo para virar esse jogo!</p> 
+                <form class="infos-item" method="POST">
+                    <input name="nome" type="text" class="form-control mb-4 btn_color"  
+                        placeholder="Nome Completo" pattern="^\D{2,}\s[\D\s]{2,}$" required>
+                    <input name="email" type="email" class="form-control mb-4 btn_color"  
+                        placeholder="Seu melhor email" required>
+                    <div>
+                        <button type="button" class="btn btn-secondary btn-lg">Inscrever</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-5">
+                <img id="img_w" src="./images/section1.png" alt="Mulher no trabalho">
+            </div>
         </div>
-        <div class="col">
-            <img src="/img/mulherempe.svg">
-        </div>
-    </div>
-    <!--titulo convidadas e imagens-->
+
+    </section>
+    
+
+<!--titulo convidadas e imagens-->
     <div class="row">
         <h1>CONVIDADAS:</h1>
     </div>
