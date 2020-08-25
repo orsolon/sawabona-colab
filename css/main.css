@@ -1,0 +1,12 @@
+.navbar {
+    background-color: #FDA381;
+}
+
+#logo {
+    width: 22em;
+}
+
+.navbar-nav li{
+    display: flex;
+    flex-direction: column;
+}

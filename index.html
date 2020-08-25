@@ -9,77 +9,87 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <title>Sawabona - Colab</title>
 </head>
 
 <body>
-    <div class="container">
-        <!--Cabecalho-->
-        <div class="row" class="cabecalho">
-            <div class="col">
-                <img src="/img/logo.svg">
-            </div>
-            <div class="col">
-                <p>Nós RESPEITAMOS você.
-                <p>
-                <p>VALORIZAMOS você.</p>
-                <p>você é IMPORTANTE para nós.</p>
-            </div>
-        </div>
-        <!--formulario e imagem da mulher em pé-->
-        <div class="row">
-            <div class="col">
-                <form method="POST">
-                    <div class="infos-item">
-                        <label for="nome"><b>Seu nome</b></label>
-                        <input name="name" class="infos-input" type="text" pattern="^\D{2,}\s[\D\s]{2,}$"
-                            placeholder="Digite seu nome completo" title="Digite seu nome completo" required="">
-                    </div>
-                    <div class="infos-item">
-                        <label for="email"><b>Seu melhor email</b></label>
-                        <input name="email" class="infos-input" type="email" title="Digite um email válido"
-                            placeholder="Digite um email válido" id="email">
-                    </div>
-                    <input type="button" value="Garantir presença" onclick="sendEmail()"/>
-                </form>
-            </div>
-            <div class="col">
-                <img src="/img/mulherempe.svg">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img id="logo" src="./images/logo.png" alt="sawabona">
+            </a>
+
+            <div class="collapse navbar-collapse">
+                <ul class="ml-auto my-3 nav flex-column">
+                    <li class="nav-item">
+                        <p class="text-right">Nós <b>RESPEITAMOS</b> você.</p>
+                    </li>
+                    <li class="nav-item">
+                        <p class="text-right"><b>VALORIZAMOS</b> você.</p>
+                    </li>
+                    <li class="nav-item">
+                        <p class="text-right">você é <b>IMPORTANTE</b> para nós.</p>
+                    </li>
+
+                </ul>
+
             </div>
         </div>
-        <!--titulo convidadas e imagens-->
-        <div class="row">
-            <h1>CONVIDADAS:</h1>
+    </nav>
+    <!--formulario e imagem da mulher em pé-->
+    <div class="row">
+        <div class="col">
+            <form method="POST">
+                <div class="infos-item">
+                    <label for="nome"><b>Seu nome</b></label>
+                    <input name="name" class="infos-input" type="text" pattern="^\D{2,}\s[\D\s]{2,}$"
+                        placeholder="Digite seu nome completo" title="Digite seu nome completo" required="">
+                </div>
+                <div class="infos-item">
+                    <label for="email"><b>Seu melhor email</b></label>
+                    <input name="email" class="infos-input" type="email" title="Digite um email válido"
+                        placeholder="Digite um email válido" id="email">
+                </div>
+                <input type="button" value="Garantir presença" onclick="sendEmail()" />
+            </form>
         </div>
-        <div class="row">
-            <div class="col">
-                <img src="/img/duasmulheresnopc.svg">
-            </div>
-        </div>
-        <!--1 imagem + texto-->
-        <div class="row">
-            <div class="col">
-                <img src="/img/umamulhernopc.svg">
-            </div>
-            <div class="col">
-                <p>Não perca!</p>
-                <p>Dia 27/08/2020</p>
-                <p>20 horas no Youtube</p>
-            </div>
-        </div>
-        <!--rodapé-->
-        <div class="row">
-            <div class="col">
-                <img src="/img/maozinhalogo.svg">
-            </div>
-            <div class="col">
-                <p>Nós RESPEITAMOS você</p>
-                <p>VALORIZAMOS você</p>
-                <p>Você é IMPORTANTE para nós</p>
-            </div>
+        <div class="col">
+            <img src="/img/mulherempe.svg">
         </div>
     </div>
+    <!--titulo convidadas e imagens-->
+    <div class="row">
+        <h1>CONVIDADAS:</h1>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="/img/duasmulheresnopc.svg">
+        </div>
+    </div>
+    <!--1 imagem + texto-->
+    <div class="row">
+        <div class="col">
+            <img src="/img/umamulhernopc.svg">
+        </div>
+        <div class="col">
+            <p>Não perca!</p>
+            <p>Dia 27/08/2020</p>
+            <p>20 horas no Youtube</p>
+        </div>
+    </div>
+    <!--rodapé-->
+    <div class="row">
+        <div class="col">
+            <img src="/img/maozinhalogo.svg">
+        </div>
+        <div class="col">
+            <p>Nós RESPEITAMOS você</p>
+            <p>VALORIZAMOS você</p>
+            <p>Você é IMPORTANTE para nós</p>
+        </div>
+    </div>
+
     <!--Script de envio de formulários-->
     <script>
         //index.js  
