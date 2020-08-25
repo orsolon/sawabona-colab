@@ -141,23 +141,22 @@
 
     <!--Script de envio de formulários-->
     <script>
-        //index.js  
+        //index.js
+        var email = document.getElementById('email')
+        var nome = document.getElementById('nome')
         function sendEmail() {
             Email.send({
-                SecurityToken: "e9b497ee-9cce-4235-9e56-35085e18f323",
-                Host: "smtp.gmail.com",
-                Username: "sawabonacolab@gmail.com",
-                Password: "xp35grupo2*",
-                To: document.getElementsByID("email").value,
+                SecureToken: "aa140408-bd7a-431c-9d1d-2e5059a09410",
+                To: email.value,
                 From: "sawabonacolab@gmail.com",
-                Subject: "Live - SawabonaColab",
-                Body: "teste",
+                Subject: "Seja bem-vinda ao Sawabona Colab!",
+                Body: "Mensagem para ser corrigida"
             }).then(
-                message => alert("E-mail enviado com sucesso")
+                message => alert("Presenca garantida! Cheque seu e-mail =)")
             );
         }
-
     </script>
+    <!--Fim do script!-->
 
     <!--Script contagem regressiva-->
 
