@@ -1,11 +1,120 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sawabona</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Sawabona - Colab</title>
 </head>
+
 <body>
-    Hello Sawabona
+    <div class="container">
+        <!--Cabecalho-->
+        <div class="row" class="cabecalho">
+            <div class="col">
+                <img src="/img/logo.svg">
+            </div>
+            <div class="col">
+                <p>Nós RESPEITAMOS você.
+                <p>
+                <p>VALORIZAMOS você.</p>
+                <p>você é IMPORTANTE para nós.</p>
+            </div>
+        </div>
+        <!--formulario e imagem da mulher em pé-->
+        <div class="row">
+            <div class="col">
+                <form method="POST">
+                    <div class="infos-item">
+                        <label for="nome"><b>Seu nome</b></label>
+                        <input name="name" class="infos-input" type="text" pattern="^\D{2,}\s[\D\s]{2,}$"
+                            placeholder="Digite seu nome completo" title="Digite seu nome completo" required="">
+                    </div>
+                    <div class="infos-item">
+                        <label for="email"><b>Seu melhor email</b></label>
+                        <input name="email" class="infos-input" type="email" title="Digite um email válido"
+                            placeholder="Digite um email válido" id="email">
+                    </div>
+                    <input type="button" value="Garantir presença" onclick="sendEmail()"/>
+                </form>
+            </div>
+            <div class="col">
+                <img src="/img/mulherempe.svg">
+            </div>
+        </div>
+        <!--titulo convidadas e imagens-->
+        <div class="row">
+            <h1>CONVIDADAS:</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="/img/duasmulheresnopc.svg">
+            </div>
+        </div>
+        <!--1 imagem + texto-->
+        <div class="row">
+            <div class="col">
+                <img src="/img/umamulhernopc.svg">
+            </div>
+            <div class="col">
+                <p>Não perca!</p>
+                <p>Dia 27/08/2020</p>
+                <p>20 horas no Youtube</p>
+            </div>
+        </div>
+        <!--rodapé-->
+        <div class="row">
+            <div class="col">
+                <img src="/img/maozinhalogo.svg">
+            </div>
+            <div class="col">
+                <p>Nós RESPEITAMOS você</p>
+                <p>VALORIZAMOS você</p>
+                <p>Você é IMPORTANTE para nós</p>
+            </div>
+        </div>
+    </div>
+    <!--Script de envio de formulários-->
+    <script>
+        //index.js  
+        function sendEmail() {
+            Email.send({
+                SecurityToken: "e9b497ee-9cce-4235-9e56-35085e18f323",
+                Host: "smtp.gmail.com",
+                Username: "sawabonacolab@gmail.com",
+                Password: "xp35grupo2*",
+                To: document.getElementsByID("email").value,
+                From: "sawabonacolab@gmail.com",
+                Subject: "Live - SawabonaColab",
+                Body: "teste",
+            }).then(
+                message => alert("E-mail enviado com sucesso")
+            );
+        }
+    </script>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
