@@ -1,4 +1,4 @@
-.navbar {
+.navbar, .jumbotron{
     background-color: #FDA381;
 }
 
@@ -22,9 +22,28 @@
 }
 
 .btn_color {
-    background-color: #fbc8b6;
+    background-color: #FECAB6;
 }
 
-#img_w {
+.img_w {
     width: 80%;
 }
+
+.jumbotron {
+    background-color: #FECAB6
+}
+
+.card-img-top {
+    width: 10em;
+    align-self: center;
+}
+
+.txfooter {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+}
+
+
+
+
+
