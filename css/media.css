@@ -1,0 +1,71 @@
+  
+@media (max-width: 800px) {
+    .img_w {
+        display: none;
+    }
+}
+
+  
+@media (max-width: 600px) {
+    #logo {
+        width: 12em;
+     }
+     #caixa-form {
+        width: 90%;
+        margin-right: 25%;
+       
+    }
+
+    .caixa-campos {
+        padding-left: 3%;
+        width: 85%;
+        float: left;
+    }
+
+    .textsawabona {
+        font-size: 1.2em;
+    }
+
+    .txfooter {
+        font-size: 1.5em;
+    }
+
+    #bnt-enviar {    
+        width: 80%;
+        margin-right: 25%;
+        
+        
+    }
+
+    .jumbotron {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .img_z {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    #logo {
+       width: 12em;
+    }
+
+    #caixa-form {
+        width: 100%;
+        
+    }
+
+    .text_header {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #formulario {
+        width: 100%;
+    }
+
+}
