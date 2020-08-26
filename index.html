@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -48,12 +49,12 @@
                     abaixo para virar esse jogo!</p> 
                 <div id="caixa-form">
                     <form class="infos-item" method="POST" id="formulario">
-                        <input name="nome" type="text" class="form-control mb-4 btn_color"  
+                        <input id= "nome" name="nome" type="text" class="form-control mb-4 btn_color"  
                             placeholder="Nome Completo" pattern="^\D{2,}\s[\D\s]{2,}$" required>
-                        <input name="email" type="email" class="form-control mb-4 btn_color"  
+                        <input id= "email" name="email" type="email" class="form-control mb-4 btn_color"  
                             placeholder="Seu melhor email" required>
                         <div>
-                            <button type="button" id="bnt-enviar" class="btn btn-secondary btn-lg">Inscrever</button>
+                            <button type="button" id="bnt-enviar" class="btn btn-secondary btn-lg" onclick="sendEmail()">Inscrever</button>
                         </div>
                     </form>
                 </div>
@@ -139,25 +140,6 @@
             </div>
         </div>
     </div>
-
-    <!--Script de envio de formulários-->
-    <script>
-        //index.js
-        var email = document.getElementById('email')
-        var nome = document.getElementById('nome')
-        function sendEmail() {
-            Email.send({
-                SecureToken: "aa140408-bd7a-431c-9d1d-2e5059a09410",
-                To: email.value,
-                From: "sawabonacolab@gmail.com",
-                Subject: "Seja bem-vinda ao Sawabona Colab!",
-                Body: "Mensagem para ser corrigida"
-            }).then(
-                message => alert("Presenca garantida! Cheque seu e-mail =)")
-            );
-        }
-    </script>
-    <!--Fim do script!-->
 
     <!--Script contagem regressiva-->
 
