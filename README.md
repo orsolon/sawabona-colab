@@ -8,27 +8,26 @@ O desafio é: Atingir 1.000 visualizações através da realização de um event
 
 O evento precisa ser online e contar com a presença de pelo menos 2 convidados para palestrar, debater, trazer conteúdo, enfim, fazer parte da programação.
 
-*Criamos o Sawabona Colab
-!(/images/b093791d-46c0-4116-993f-8897a50c4928.jfif)
+*Criamos o Sawabona Colab - live no You Tube
+
+<p align="center">
+  <img alt="Live" width="150px" src="./images/b093791d-46c0-4116-993f-8897a50c4928.jfif" />
+</p>
 
 
-CHECKLIST 
+CHECKLIST de itens para seguir:
 
-Hacker 
 
-Definir se vai fazer em Wordpress ou hard code;
+Criar uma landing page 
 
-Criar repositório no GitHub;
+Neste desafio, praticamos os conhecimentos em:
+
+* HTML5;
+* CSS3;
+* Javascript
+* Bootstrap 4
 
 Conectar repositório ao Netlify; <https://sawabonacolab.netlify.app/>
-
-Disponibilizar domínio;
-
-Apontar domínio para DNS do Netlify;
-
-Dar push no repositório com HTML básico;
-
-Ver o seu site disponível na web;
 
 Criar e iterar sob design enviado por hipsters (se ainda não existir, estruturar página de exemplo com algum framework de CSS);
 
