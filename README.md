@@ -15,17 +15,17 @@ O evento precisa ser online e contar com a presença de pelo menos 2 convidados 
 </p>
 
 
-CHECKLIST de itens para seguir:
-
-
-Criar uma landing page 
-
-Neste desafio, praticamos os conhecimentos em:
+##### Neste desafio, praticamos os conhecimentos em: <h5>
 
 * HTML5;
 * CSS3;
 * Javascript
 * Bootstrap 4
+
+CHECKLIST de itens para seguir:
+
+
+Criar uma landing page 
 
 Conectar repositório ao Netlify; <https://sawabonacolab.netlify.app/>
 
